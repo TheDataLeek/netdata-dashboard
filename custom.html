@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fillory Status</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:image" content="./pentacle_tattoo_wall_clock.jpg"/>
+
+    <script>
+    var netdataTheme = 'slate'; // this is dark
+    </script>
+    <script type="text/javascript" src="http://localhost:19999/dashboard.js"></script>
+    <script>
+    NETDATA.pause(function() {
+        NETDATA.options.current.show_help = false;
+        NETDATA.unpause();
+    });
+    </script>
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+<h1>CPU</h1>
+<div>
+    <div style="width: 10%; display: inline-block;">
+        <div data-netdata="system.cpu"
+            data-chart-library="gauge"
+            data-title="CPU"
+            data-units="%"
+            data-width="100%"
+            data-gauge-max-value="100"
+            data-width="18%"></div>
+    </div>
+    <div style="width: 40%; display: inline-block;">
+        <div data-netdata="system.cpu"
+            data-chart-library="dygraph"
+            data-width="100%"
+            data-height="200"
+            data-after="-300"
+            ></div>
+        <br/>
+    </div>
+    <div style="width: 24%; display: inline-block;">
+        <div data-netdata="cpu.cpu0"
+            data-chart-library="sparkline"
+            data-width="100%"
+            data-height="50"
+            data-after="-300"
+            ></div>
+        <br/>
+        <div data-netdata="cpu.cpu1"
+            data-chart-library="sparkline"
+            data-width="100%"
+            data-height="50"
+            data-after="-300"
+            ></div>
+        <br/>
+        <div data-netdata="cpu.cpu2"
+            data-chart-library="sparkline"
+            data-width="100%"
+            data-height="50"
+            data-after="-300"
+            ></div>
+        <br/>
+        <div data-netdata="cpu.cpu3"
+            data-chart-library="sparkline"
+            data-width="100%"
+            data-height="50"
+            data-after="-300"
+            ></div>
+        <br/>
+    </div>
+    <div style="width: 24%; display: inline-block;">
+        <div data-netdata="cpu.cpu4"
+            data-chart-library="sparkline"
+            data-width="100%"
+            data-height="50"
+            data-after="-300"
+            ></div>
+        <br/>
+        <div data-netdata="cpu.cpu5"
+            data-chart-library="sparkline"
+            data-width="100%"
+            data-height="50"
+            data-after="-300"
+            ></div>
+        <br/>
+        <div data-netdata="cpu.cpu6"
+            data-chart-library="sparkline"
+            data-width="100%"
+            data-height="50"
+            data-after="-300"
+            ></div>
+        <br/>
+        <div data-netdata="cpu.cpu7"
+            data-chart-library="sparkline"
+            data-width="100%"
+            data-height="50"
+            data-after="-300"
+            ></div>
+        <br/>
+    </div>
+</div>
+
+<div>
+    <div style="width: 100%; display: inline-block;">
+        <div data-netdata="apps.cpu"
+            data-chart-library="dygraph"
+            data-dygraph-valuerange="[0, 800]"
+            data-width="100%"
+            data-height="250"
+            data-after="-300"
+            ></div>
+        <br/>
+    </div>
+</div>
+
+<h1>Memory</h1>
+<div>
+    <div style="width: 9%; display: inline-block;">
+        <div data-netdata="system.ram"
+            data-dimensions="cached|free"
+            data-append-options="percentage"
+            data-chart-library="easypiechart"
+            data-units="%"
+            data-easypiechart-max-value="100"
+            data-title="Available RAM"
+            data-width="100%"
+            data-height="300"
+            data-after="-300"
+            ></div>
+        <br/>
+    </div>
+    <div style="width: 90%; display: inline-block;">
+        <div data-netdata="apps.mem"
+            data-chart-library="dygraph"
+            data-dygraph-valuerange="[0, 16000]"
+            data-width="100%"
+            data-height="300"
+            data-after="-300"
+            ></div>
+        <br/>
+    </div>
+</div>
+
+<h1>Net/Disk</h1>
+<div>
+    <div style="width: 10%; display: inline-block;">
+        <div data-netdata="net.wlp8s0"
+            data-dimensions="received"
+            data-chart-library="gauge"
+            data-gauge-adjust="width"
+            data-title="received"
+            data-width="100%"
+            data-before="0"
+            role="application"></div>
+        <div data-netdata="net.wlp8s0"
+            data-dimensions="sent"
+            data-chart-library="gauge"
+            data-gauge-adjust="width"
+            data-title="sent"
+            data-width="100%"
+            data-before="0"
+            role="application"></div>
+    </div>
+    <div style="width: 44%; display: inline-block;">
+        <div data-netdata="system.ipv4"
+            data-chart-library="dygraph"
+            data-width="100%"
+            data-height="150"
+            data-after="-300"
+            ></div>
+        <br/>
+        <div data-netdata="system.ipv6"
+            data-chart-library="dygraph"
+            data-width="100%"
+            data-height="150"
+            data-after="-300"
+            ></div>
+        <br/>
+    </div>
+    <div style="width: 44%; display: inline-block;">
+        <div data-netdata="system.io"
+            data-chart-library="dygraph"
+            data-width="100%"
+            data-height="300"
+            data-after="-300"
+            ></div>
+        <br/>
+    </div>
+</div>
+
+</body>
+</html>
