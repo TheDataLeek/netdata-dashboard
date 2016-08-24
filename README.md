@@ -64,3 +64,15 @@ dropbox: dropbox*
 ## Notes
 
 * [Here's documentation on `valuerange`](https://github.com/firehol/netdata/issues/832)
+
+## TODO
+
+* Disk Space
+* GPU
+* Temp
+* Battery
+* Active when not focused
+* Health Checks
+    * Disk Writes
+    * Temp
+    * Battery
