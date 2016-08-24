@@ -67,9 +67,8 @@ dropbox: dropbox*
 
 ## TODO
 
-* Disk Space
+* Main CPU graph - remove labels (they're useless)
 * GPU
-* Temp
 * Battery
 * Active when not focused
 * Health Checks
