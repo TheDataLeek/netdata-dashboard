@@ -37,9 +37,9 @@
     <div style="width: 50%; display: inline-block">
     <h3><a href="http://localhost:19999">Back to Homepage</a></h3>
 
-    <h1>CPU</h1>
+    <h3>CPU</h3>
     <div>
-        <div style="width: 19%; display: inline-block;">
+        <div style="width: 18%; display: inline-block;">
             <div data-netdata="system.cpu"
                 data-chart-library="gauge"
                 data-title="CPU"
@@ -53,7 +53,7 @@
                 data-chart-library="dygraph"
                 data-dygraph-valuerange="[0, 100]"
                 data-width="100%"
-                data-height="150"
+                data-height="100"
                 data-after="-300"
                 ></div>
             <br/>
@@ -62,28 +62,28 @@
             <div data-netdata="cpu.cpu0"
                 data-chart-library="sparkline"
                 data-width="100%"
-                data-height="37.5"
+                data-height="25"
                 data-after="-300"
                 ></div>
             <br/>
             <div data-netdata="cpu.cpu1"
                 data-chart-library="sparkline"
                 data-width="100%"
-                data-height="37.5"
+                data-height="25"
                 data-after="-300"
                 ></div>
             <br/>
             <div data-netdata="cpu.cpu2"
                 data-chart-library="sparkline"
                 data-width="100%"
-                data-height="37.5"
+                data-height="25"
                 data-after="-300"
                 ></div>
             <br/>
             <div data-netdata="cpu.cpu3"
                 data-chart-library="sparkline"
                 data-width="100%"
-                data-height="37.5"
+                data-height="25"
                 data-after="-300"
                 ></div>
             <br/>
@@ -92,28 +92,28 @@
             <div data-netdata="cpu.cpu4"
                 data-chart-library="sparkline"
                 data-width="100%"
-                data-height="37.5"
+                data-height="25"
                 data-after="-300"
                 ></div>
             <br/>
             <div data-netdata="cpu.cpu5"
                 data-chart-library="sparkline"
                 data-width="100%"
-                data-height="37.5"
+                data-height="25"
                 data-after="-300"
                 ></div>
             <br/>
             <div data-netdata="cpu.cpu6"
                 data-chart-library="sparkline"
                 data-width="100%"
-                data-height="37.5"
+                data-height="25"
                 data-after="-300"
                 ></div>
             <br/>
             <div data-netdata="cpu.cpu7"
                 data-chart-library="sparkline"
                 data-width="100%"
-                data-height="37.5"
+                data-height="25"
                 data-after="-300"
                 ></div>
             <br/>
@@ -126,14 +126,14 @@
                 data-chart-library="dygraph"
                 data-dygraph-valuerange="[0, 800]"
                 data-width="100%"
-                data-height="250"
+                data-height="150"
                 data-after="-300"
                 ></div>
             <br/>
         </div>
     </div>
 
-    <h1>Memory</h1>
+    <h3>Memory</h3>
     <div>
         <div style="width: 24%; display: inline-block;">
             <div data-netdata="system.ram"
@@ -144,7 +144,7 @@
                 data-easypiechart-max-value="100"
                 data-title="Available RAM"
                 data-width="100%"
-                data-height="300"
+                data-height="100"
                 data-after="-300"
                 ></div>
             <br/>
@@ -153,21 +153,21 @@
             <div data-netdata="system.ram"
                 data-chart-library="dygraph"
                 data-width="100%"
-                data-height="100"
+                data-height="20"
                 data-after="-300"
                 ></div>
             <div data-netdata="apps.mem"
                 data-chart-library="dygraph"
                 data-dygraph-valuerange="[0, 16000]"
                 data-width="100%"
-                data-height="200"
+                data-height="125"
                 data-after="-300"
                 ></div>
             <br/>
         </div>
     </div>
 
-    <h1>Net</h1>
+    <h3>Net</h3>
     <div>
         <div style="width: 15%; display: inline-block;">
             <div data-netdata="net.wlp8s0"
@@ -191,14 +191,14 @@
             <div data-netdata="system.ipv4"
                 data-chart-library="dygraph"
                 data-width="100%"
-                data-height="150"
+                data-height="80"
                 data-after="-300"
                 ></div>
             <br/>
             <div data-netdata="system.ipv6"
                 data-chart-library="dygraph"
                 data-width="100%"
-                data-height="150"
+                data-height="80"
                 data-after="-300"
                 ></div>
             <br/>
@@ -207,46 +207,46 @@
 </div>
 
 <div style="width: 49%; display: inline-block">
-    <h1>Temperature</h1>
+    <h3>Temperature</h3>
     <div style="width: 100%; display: inline-block;">
         <div data-netdata="sensors.temp_coretemp_0_hwmon_hwmon1"
             data-chart-library="dygraph"
             data-dygraph-valuerange="[0, 100]"
             data-width="100%"
-            data-height="300"
+            data-height="200"
             data-after="-300"
             ></div>
         <br/>
     </div>
-    <h1>Disk</h1>
+    <h3>Disk</h3>
     <div style="width: 100%; display: inline-block;">
         <div data-netdata="system.io"
             data-chart-library="dygraph"
             data-width="100%"
-            data-height="300"
+            data-height="120"
             data-after="-300"
             ></div>
         <br/>
         <div data-netdata="disk_space.sda3"
             data-chart-library="dygraph"
             data-width="100%"
-            data-height="300"
+            data-height="200"
             data-after="-300"
             ></div>
         <br/>
     </div>
-    <h1>Netdata</h1>
+    <h3>Netdata</h3>
     <div style="width: 100%; display: inline-block;">
         <div data-netdata="netdata.server_cpu"
             data-chart-library="dygraph"
             data-width="50%"
-            data-height="200"
+            data-height="100"
             data-after="-300"
         ></div>
         <div data-netdata="netdata.net"
             data-chart-library="dygraph"
             data-width="49%"
-            data-height="200"
+            data-height="100"
             data-after="-300"
         ></div>
     </div>
