@@ -47,6 +47,11 @@ Here's what my version looks like for personal use.
 
 ![png](./demo.png)
 
+## Custom Dashbord 2
+This is another dashboard that works well on server instances.
+
+![png](./demo2.png)
+
 ## Specific Modifications
 
 * Added new applications to be logged.

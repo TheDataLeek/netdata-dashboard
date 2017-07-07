@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo cp ./server-dashboard.html /usr/share/netdata/web/server-dashboard.html
+sudo chown netdata /usr/share/netdata/web/server-dashboard.html
+sudo chgrp netdata /usr/share/netdata/web/server-dashboard.html
 sudo cp ./custom.html /usr/share/netdata/web/custom.html
 sudo chown netdata /usr/share/netdata/web/custom.html
 sudo chgrp netdata /usr/share/netdata/web/custom.html
